@@ -1,12 +1,19 @@
 import './App.css'
-import Nbtn from './components/notificationBTN/nbtn'
+import Header from './components/Header/hind'
+import SalesCard from './components/SalesCard/scInd'
 
 function App() {
 
   return (
     <>
-      <p>hello word</p>
-      <Nbtn/>
+      <Header/>
+      <main>
+        <section id="sales">
+          <div className="dsmeta-container">
+            <SalesCard/>
+          </div>
+        </section>
+      </main>
     </>
   )
 }
