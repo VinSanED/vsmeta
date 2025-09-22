@@ -1,6 +1,6 @@
 package com.vinsan.vsmeta.etities;
 
-import java.time.LocalDate;
+import java.util.Date;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -19,12 +19,12 @@ public class Sale {
 	private Integer visited;
 	private Integer deals;
 	private Double amount;
-	private LocalDate date;
+	private Date date;
 	
 	public Sale() {
 	}
 	
-	public Sale(Long id, String sallerName, Integer visited, Integer deals, Double amount, LocalDate date) {
+	public Sale(Long id, String sallerName, Integer visited, Integer deals, Double amount, Date date) {
 		this.id = id;
 		this.sellerName = sallerName;
 		this.visited = visited;
@@ -62,14 +62,11 @@ public class Sale {
 	public void setAmount(Double amount) {
 		this.amount = amount;
 	}
-	public LocalDate getDate() {
+	public Date getDate() {
 		return date;
 	}
-	public void setDate(LocalDate date) {
+	public void setDate(Date date) {
 		this.date = date;
 	}
-	
-	
-	
 	
 }
