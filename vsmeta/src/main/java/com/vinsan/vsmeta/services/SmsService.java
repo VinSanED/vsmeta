@@ -34,7 +34,7 @@ public class SmsService {
 		
 		String date = sale.getDate().getMonthValue()+ "/" + sale.getDate().getYear();
 		String msg = "vendedor "+sale.getSallerName()+" conseguiu faturar: "
-				+String.format("%.2f", sale.getAmount()) + "em vendas, na data: "+date;
+				+String.format("%.2f", sale.getAmount()) + " em vendas, na data: "+date;
 
 		Twilio.init(twilioSid, twilioKey);
 
